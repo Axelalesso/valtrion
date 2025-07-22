@@ -1,0 +1,338 @@
+body {
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+
+main{
+    background-color: #d5d4ba;
+}
+
+.logo-valtrion {
+  display: block;
+  margin: 20px auto;
+  max-width: 150px;
+  width: 60%;
+  height: auto;
+}
+
+
+.quienes-texto {
+  font-family: "Montserrat", sans-serif;
+  color: #012e46;
+  text-align: center;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0 auto 10px auto;
+  padding: 0 1rem;
+  max-width: 700px;
+}
+
+
+
+
+.navbar-nav {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    margin-left: 2rem; /* ajustá este valor hasta que se vea como querés */
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-valtrion {
+    margin-right: auto; 
+}
+
+li{
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.caja-1{
+    height: auto;
+    background-color: #d5d4ba;
+}
+
+.titulo{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    color: #012e46;
+}
+
+.frase{
+    font-family: "Montserrat", sans-serif;
+    margin-left:30%;
+    color: #012e46 ;
+}
+
+.logo-hero{
+  display: block;
+  margin: 20px auto;
+  width: 350px;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.logo-hero:hover{
+    transform: rotate(10deg) scale(1.05);
+}
+
+.titulo-2{
+    margin-top: 40px;
+    text-align: center;
+    color: #012e46;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+/* SERVICIOS */
+.servicios {
+  margin-top: 50px;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.tarjetas {
+  background-color: whitesmoke;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.tarjetas:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.img-servicios, .img-servicios2, .img-servicios3 {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img-servicios {
+  height: 80px;
+  width: 70px;
+}
+.img-servicios2 {
+  height: 90px;
+  width: 80px;
+}
+.img-servicios3 {
+  height: 80px;
+  width: 70px;
+}
+.text-servicios, .text-servicios3 {
+  text-align: center;
+  font-family: "Funnel Display", serif;
+  margin-top: 15px;
+}
+
+.Proyectos {
+  margin-top: 100px;
+}
+
+.titulo-3{
+    text-align: center;
+    color: #012e46;
+    font-family: "Montserrat", sans-serif;
+}
+
+.card-padre {
+  margin-top: 10px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 70px 10px 30px 10px;
+  max-width: 300px;
+  width: 90%;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.card-title {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card img{
+    width: 100%;
+    height: 45%;
+}
+
+/* BOTÓN WHATSAPP */
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  bottom: 40px;
+  right: 40px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 999;
+}
+
+.fa-whatsapp {
+  font-size: 60px;
+}
+
+.float:hover {
+  background-color: #2beb72;
+}
+
+form {
+  margin-top: 100px;
+  text-align: center;
+  padding: 20px;
+}
+
+.form-control {
+  background-color: white;
+  width: 90%;
+  max-width: 400px;
+  height: 100px;
+  padding: 20px;
+  margin: 20px auto;
+  display: block;
+  border: none;
+  color: #00293c;
+  border-radius: 5px;
+}
+.form-control:hover {
+  background-color: white;
+}
+.form-label {
+  font-family: "Montserrat", sans-serif;
+  color: #00293c;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d5d4ba;
+  padding: 1rem;
+}
+
+.logo-footer {
+  width: 50px; /* ajustá según necesites */
+  margin-bottom: 0.5rem;
+}
+
+.frase-footer {
+  font-size: 1rem;
+  color: #00293c; /* el azul del logo */
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.logo-footer2, .logo-footer3 {
+  margin-top: 40px;
+  width: 30px;
+  margin: 20px;
+}
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  body, main {
+    padding: 0 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+
+  li {
+    padding: 10px;
+  }
+
+  .logo-valtrion {
+    width: 50%;
+    max-width: 100px;
+  }
+
+  .logo-hero {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .servicios {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .tarjetas {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+  }
+
+  .img-servicios,
+  .img-servicios2,
+  .img-servicios3 {
+    width: 60px;
+    height: auto;
+  }
+
+  .text-servicios {
+    font-size: 0.8rem;
+  }
+
+  .card-padre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto;
+  }
+
+  .float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .fa-whatsapp {
+    font-size: 40px;
+  }
+
+  .logo-footer {
+    width: 40px;
+  }
+
+  .logo-footer2,
+  .logo-footer3 {
+    width: 25px;
+    margin: 10px;
+  }
+}
