@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer');  // <-- Añade esta línea
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+    res.render('nosotros', { title: 'nosotros' });
 });
 
 module.exports = router;
