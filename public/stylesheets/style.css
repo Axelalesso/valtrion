@@ -247,9 +247,6 @@ body {
 
 /*       CSS DE SERVICIOS                                           */
 
-/* Reset and Base Styles */
-
-
 .menu-toggle {
   display: none;
   background: none;
@@ -394,152 +391,197 @@ body {
   background-color: #000;
 }
 
-
 .contenedor-contacto {
-      margin-top: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      background: #404E66;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      padding: 2rem;
-      max-width: 1100px;
-      margin: auto;
-      gap: 2rem;
-      align-items: flex-start;
-    }
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #404E66;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+  gap: 2rem;
+  align-items: flex-start;
+}
 
-    .formulario-container {
-      flex: 1;
-      min-width: 300px;
-    }
+.formulario-container {
+  flex: 1;
+  min-width: 300px;
+}
 
-    .formulario-container h2 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-      color: #ffffff;
-      text-align: center;
-    }
+.formulario-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  text-align: center;
+}
 
-    label {
-      display: block;
-      margin-bottom: 0.3rem;
-      font-weight: 600;
-      color: #ffffff;
-    }
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #ffffff;
+}
 
-    input,
-    textarea {
-      width: 100%;
-      padding: 0.7rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
 
-    button {
-      background-color: #012e46;
-      color: white;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
+button {
+  background-color: #012e46;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-    button:hover {
-      background-color: #024e7f;
-    }
+button:hover {
+  background-color: #024e7f;
+}
 
-    iframe {
-      flex: 1;
-      min-width: 300px;
-      height: 100%;
-      border: 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      aspect-ratio: 4 / 3;
-    }
+iframe {
+  flex: 1;
+  min-width: 300px;
+  height: 100%;
+  border: 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 4 / 3;
+}
 
-    @media screen and (max-width: 768px) {
-      .contenedor-contacto {
-        flex-direction: column;
-      }
-      iframe {
-        aspect-ratio: auto;
-        height: 300px;
-      }
-    }
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .contenedor-contacto {
+    flex-direction: column;
+    align-items: center;       /* centra el contenido */
+    padding: 1.5rem;
+  }
+
+  .formulario-container {
+    max-width: 400px;          /* ancho máximo para que no se estire demasiado */
+    width: 100%;
+    margin: 0 auto;            /* centrado horizontal */
+  }
+
+  .formulario-container h2 {
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 400px;          /* mismo ancho que el formulario */
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenedor-contacto {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  
+  .formulario-container h2 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  button {
+    width: 100%; /* botón ancho completo en móviles */
+    font-size: 0.95rem;
+    padding: 0.8rem;
+  }
+
+  iframe {
+    aspect-ratio: 1 / 1; /* cuadrado para pantallas muy chicas */
+    min-height: 200px;
+  }
+}
+
+
+
 
     /*     CSS DE NOSOTROS    */
     
-    .main-nos{
-      background-color: #000;
-    }
+    .main-nos {
+  background-color: #000;
+}
 
-    .tarjeta{
-      background-image: url('/images/fondo-nos2.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 60vh; /* o más si querés que se vea más grande */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 2rem;
-      color: white;
-      text-align: center;
-    }
+/* ---------- HERO/TARJETA ---------- */
+.tarjeta {
+  background-image: url('/images/fondo-nos2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
 
-    .logo-nos{
-        height: 90px;
-        width: auto;
-    }
+.logo-nos {
+  height: 90px;
+  width: auto;
+}
 
-    .titulo-nos{
-      text-align: center;
-      color: #00ffd0;
-      font-family: "Montserrat", sans-serif;
+.titulo-nos {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
 
-    }
+/* ---------- SECCIÓN NOS ---------- */
+.text-nos {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
 
-    .text-nos{
-      text-align: center;
-      color: black;
-      font-family: "Montserrat", sans-serif;
-    }
-    
-    .titulo1{
-      margin-top: 20px;
-      width: 400px;
-      margin-left: 35%;
-      border-radius: 30px;
-      background-color: #00ffd0;
-    }
+.titulo1 {
+  margin: 20px auto 0 auto; /* centrado automático */
+  max-width: 400px;
+  width: 90%;
+  border-radius: 30px;
+  background-color: #00ffd0;
+  padding: 0.5rem 1rem;
+  }
 
-    .titulo-nos{
-      text-align: center;
-      color: black;
-      font-family: "Montserrat", sans-serif;
-    }
+.text-nos2 {
+  text-align: center;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
 
-    .text-nos2{
-      text-align: center;
-      color: white;
-      font-family: "Montserrat", sans-serif;
-      margin-bottom: 0;
-    }
+/* ---------- SERVICIOS ---------- */
+.servicios {
+  margin-top: 1px;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-    .servicios {
-      margin-top: 1px;
-      display: flex;
-      gap: 3rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
 .tarjetas {
   background-color: whitesmoke;
   height: 200px;
@@ -552,38 +594,32 @@ body {
   transform: scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
+
 .img-servicios, .img-servicios2, .img-servicios3 {
   margin-top: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.img-servicios {
-  height: 80px;
-  width: 70px;
-}
-.img-servicios2 {
-  height: 90px;
-  width: 80px;
-}
-.img-servicios3 {
-  height: 80px;
-  width: 70px;
-}
+.img-servicios { height: 80px; width: 70px; }
+.img-servicios2 { height: 90px; width: 80px; }
+.img-servicios3 { height: 80px; width: 70px; }
+
 .text-servicios, .text-servicios3 {
   text-align: center;
   font-family: "Funnel Display", serif;
   margin-top: 15px;
 }
 
+/* ---------- PROYECTOS ---------- */
 .Proyectos {
   margin-top: 10px;
 }
 
-.titulo-3{
-    text-align: center;
-    color: #012e46;
-    font-family: "Montserrat", sans-serif;
+.titulo-3 {
+  text-align: center;
+  color: #012e46;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card-padre {
@@ -593,11 +629,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .card {
   background-color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 70px 10px 30px 10px;
+  margin: 30px 10px;
   max-width: 300px;
   width: 90%;
 }
@@ -610,11 +647,14 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.card img{
-    width: 100%;
-    height: 45%;
+.card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
 }
 
+/* ---------- ACCORDION ---------- */
 .accordion-container {
   max-width: 600px;
   margin: 0 auto;
@@ -630,6 +670,77 @@ body {
   padding: 0.75rem 1rem;
   font-size: 0.9rem;
 }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .tarjeta {
+    padding: 1rem;
+    min-height: 50vh;
+  }
+
+  .logo-nos {
+    height: 70px;
+  }
+
+  .titulo1 {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+
+  .tarjetas {
+    height: 150px;
+    width: 150px;
+  }
+
+  .img-servicios, .img-servicios2, .img-servicios3 {
+    margin-top: 10px;
+    height: 60px;
+    width: auto;
+  }
+
+  .card {
+    margin: 20px 5px;
+    width: 100%;
+    max-width: 95%;
+  }
+
+  .accordion-container {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tarjeta {
+    min-height: 40vh;
+  }
+
+  .titulo1 {
+    font-size: 0.9rem;
+    padding: 0.4rem;
+  }
+
+  .tarjetas {
+    height: 120px;
+    width: 120px;
+  }
+
+  .img-servicios, .img-servicios2, .img-servicios3 {
+    height: 50px;
+  }
+
+  .text-servicios, .text-servicios3 {
+    font-size: 0.85rem;
+  }
+
+  .card img {
+    max-height: 150px;
+  }
+}
+
+
+
+
+
 
 /* Animations */
 @keyframes fadeInUp {
